@@ -72,6 +72,45 @@
                 </div>
             </div> -->
         </div>
+        <div class="row">
+            <div class="col mt-5">
+                <form class=d-flex onsubmit="app.housesController.createHouse()">
+                    <div class="form-group">
+                        <label for="beds">Beds</label>
+                        <input type="text" name="beds" id="beds" class="form-control" placeholder="make..."required>
+                    </div>
+                    <div class="form-group">
+                        <label for="baths">Baths</label>
+                        <input type="text" name="baths" id="baths" class="form-control" placeholder="baths..."required>
+                    </div>
+                    <div class="form-group">
+                        <label for="squarefeet">squarefeet</label>
+                        <input type="text" name="squarefeet" id="squarefeet" class="form-control" placeholder="squarefeet..."required>
+                    </div>
+                    <div class="form-group">
+                        <label for="acres">acres</label>
+                        <input type="text" name="acres" id="acres" class="form-control" placeholder="acres..."required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">price</label>
+                        <input type="text" name="price" id="price" class="form-control" placeholder="price..."required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imgUrl">imgUrl</label>
+                        <input type="text" name="imgUrl" id="imgUrl" class="form-control" placeholder="Url...">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">description</label>
+                        <input type="text" name="description" id="description" class="form-control" placeholder="description..." maxlength="240">
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button type="submit" class="btn btn-outline-success">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" id="houses">
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
