@@ -12,6 +12,20 @@ export default class house {
 
 
 get template() {
-
+  return `
+  <div class="col-md-3 col-sm-2 my-3">
+      <div class="house" bg-light "shadow">
+          <img src="${this.imgUrl}" class="w-100" alt="${this.beds} ${this.baths} house image">
+          <div class="p-3">
+              <div class="text-center">
+                  <p><b>${this.beds} - ${this.baths} - ${this.squarefeet} - ${this.acres}</b></p>
+              </div>
+              <p>${this.description}</p>
+              <p><em>$${this.price}</em></p>
+          </div>
+          </img>
+      </div>
+  </div>
+  `
 }
 }
