@@ -12,7 +12,6 @@ function _draw() {
 export default class HousesController {
 
   constructor(){
-    debugger
   ProxyState.on('houses', _draw)
   ProxyState.on('houses', () => (console.log('new house') ))
 _draw()

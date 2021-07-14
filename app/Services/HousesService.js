@@ -1,5 +1,5 @@
-import { ProxyState } from "../AppState.js";
-import House from "../Models.House.js";
+import { ProxyState } from "../AppState.js"
+import House from "../Models/House.js"
 
 class HousesService {
   createHouse(rawHouse) {
