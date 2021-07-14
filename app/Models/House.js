@@ -1,5 +1,4 @@
-export default class house {
-  
+export default class House {
   constructor ({ beds, baths, squarefeet, acres, price, imgUrl }) {
     this.beds = beds
     this.baths = baths
@@ -11,7 +10,7 @@ export default class house {
   }
 
 
-get template() {
+get Template() {
   return `
   <div class="col-md-3 col-sm-2 my-3">
       <div class="house" bg-light "shadow">

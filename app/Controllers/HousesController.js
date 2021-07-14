@@ -4,13 +4,15 @@ import { housesService } from "../Services/HousesService.js"
 function _draw() {
   let template = ''
   ProxyState.houses.forEach(house => {
-    template += house.template
+    template += house.Template
   })
   document.getElementById('houses').innerHTML = template
 }
 
 export default class HousesController {
+
   constructor(){
+    debugger
   ProxyState.on('houses', _draw)
   ProxyState.on('houses', () => (console.log('new house') ))
 _draw()

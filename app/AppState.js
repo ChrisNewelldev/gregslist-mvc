@@ -1,5 +1,5 @@
 import Car from "./Models/Car.js"
-import House from ".Models/House.js"
+import House from "./Models/House.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
