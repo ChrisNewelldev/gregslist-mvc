@@ -17,7 +17,8 @@ export default class HousesController {
 _draw()
 }
 
-createHouse () {
+createHouse() {
+  debugger
   event.preventDefault()
   let form = event.target
   let rawHouse = {
@@ -25,11 +26,11 @@ createHouse () {
     baths: form.baths.value,
     squarefeet: form.squarefeet.value,
     acres: form.acres.value,
-    price: form.prices.value,
+    prices: form.prices.value,
     description: form.description.value,
     imgUrl: form.imgUrl.value
   }
   housesService.createHouse(rawHouse)
-  form.reset
+  form.reset()
 }
 }

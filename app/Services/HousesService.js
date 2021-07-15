@@ -3,6 +3,7 @@ import House from "../Models/House.js"
 
 class HousesService {
   createHouse(rawHouse) {
+    debugger
     ProxyState.House = [...ProxyState.houses, new House(rawHouse)]
   }
 }
