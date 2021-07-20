@@ -1,5 +1,6 @@
 export default class House {
-  constructor ({ beds, baths, squarefeet, acres, price, imgUrl }) {
+  constructor ({ beds, baths, squarefeet, acres, price, imgUrl, id }) {
+    this.id = id
     this.beds = beds
     this.baths = baths
     this.squarefeet = squarefeet
@@ -21,6 +22,8 @@ get Template() {
               </div>
               <p>${this.description}</p>
               <p><em>$${this.price}</em></p>
+              <button class="btn btn-info btn-block" onclick="app.housesController.bidHouse('$this.id')"> bid </button>
+              <button class="btn btn-warning btn-block" onclick="app.housesController.deleteHouse('$this.id')"> delete </button>
           </div>
           </img>
       </div>
