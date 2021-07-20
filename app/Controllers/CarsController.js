@@ -40,7 +40,7 @@ export default class CarsController {
  }
   }
   deleteCar(carId){
-    console.log('you are rying to delete a car by the id of', carId)
+    console.log('you are trying to delete a car by the id of', carId)
     carsService.deleteCar(carId)
   }  
 
