@@ -13,7 +13,7 @@ class HousesService {
     console.log('creating house step 2')
     const res = await api.post('houses', rawHouse)
     console.log('your new house sir',res.data)
-    console.log('creaing house step 3')
+    console.log('creating house step 3')
     ProxyState.houses = [...ProxyState.houses, new House(res.data)]
   }
 
