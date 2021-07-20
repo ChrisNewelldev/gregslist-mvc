@@ -19,9 +19,11 @@ export default class CarsController {
     _draw()
   }
 
-  createCar() {
-    event.preventDefault()
-    let form = event.target
+ async createCar() {
+    try {
+      event.preventDefault()
+      console.log('creating car step 1')
+      let form = event.target
     let rawCar = {
       make: form.make.value,
       model: form.model.value,
@@ -30,7 +32,20 @@ export default class CarsController {
       description: form.description.value,
       imgUrl: form.imgUrl.value
     }
-    carsService.createCar(rawCar)
+    await carsService.createCar(rawCar)
     form.reset()
+ } catch (error) {
+   console.error(error)
+   window.alert(error.message)
+ }
   }
-}
+  deleteCar(carId){
+    console.log('you are rying to delete a car by the id of', carId)
+    carsService.deleteCar(carId)
+  }  
+
+  bidCar(carId){
+    console.log('you are bidding on the car with the id of', carId)
+    carsService.bidCar(carId)
+  }
+  }
